@@ -1,7 +1,7 @@
 var tela = window.document.getElementById("display")
-var n1 = 0
-var n2 = 0
-var se = 0
+var n1 = ""
+var n2 = ""
+var se = ""
 
 var ce = window.document.getElementById("apagar")
 ce.addEventListener("click", clicarce);
@@ -309,7 +309,13 @@ sub.addEventListener("mouseout", sairsub)
 function clicarsub(){
     tela.innerHTML += "-"
     sub.style.color = "white"
-    se = "subtracao"            
+    if (n1 == ""){
+        n1 += "-"
+    } else if (se == ""){
+        se = "subtracao"
+    } else if (n2 == ""){
+        n2 += "-"
+    }         
 }
 function entrarsub(){
     sub.style.background = "gray"
