@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Calcule a fórmula de Bhaskara</h1>
+    </header>
+    <section>
+        <div>
+            <hr>
+            <p>Vamos calcular a fórmula de Bhaskara. (ax² + bx -c = 0).</p>
+            <hr>
+            <p>Primeiro nos informe os valores de <strong>a</strong>, <strong>b</strong> e <strong>c</strong>. <br>(Obs: Não se esqueça de verificar se são valores negativos, nesses casos, coloque o sinal de <strong>-</strong> antes do número. <br>Se não houver algumas das letras na expressão, considere seu valor como <strong>0</strong>.)</p>
+        <div id="incognitas">
+            <strong>a</strong> = <input type="number" name="a" id="a">
+            <strong>b</strong> = <input type="number" name="b" id="b">
+            <strong>c</strong> = <input type="number" name="c" id="c">
+            <br>
+            <p></p>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <p></p>
+            <hr>
+        <div id="res">
+            Calculando...
+        </div>
+        <hr>
+    </section>
+    <footer>
+        <p>&copy; Senra's Productions</p>
+    </footer>
+    <script src="js.js"></script> 
+</body>
+</html>
